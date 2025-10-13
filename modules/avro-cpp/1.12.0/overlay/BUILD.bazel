@@ -12,6 +12,7 @@ cc_library(
         exclude = ["impl/avrogencpp.cc"],
     ),
     hdrs = glob(["include/**/*.hh"]),
+    copts = ["-std=c++17"],
     includes = [
         "include",
         "include/avro",
